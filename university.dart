@@ -5,7 +5,7 @@ class University {
 
   University(this._name, this._city, [this._ranking]);
   
-  String get getName => this._name;
-  String get getCity => this._city;
-  int? get getRanking => this._ranking;
+  String get name => this._name;
+  String get city => this._city;
+  int? get ranking => this._ranking;
 }
