@@ -1,16 +1,16 @@
 class Person {
-  String name;
-  String surname;
-  String cityOfOrigin;
-  int age;
-  int height;
+  String name;                // Name must be a String
+  String surname;             // Surname must be a String
+  String cityOfOrigin;        // City of Origin must be a String
+  int age;                   // Age must be an int
+  int height;                // Height must be an int
 
-  // Constructor with positional parameters, with optional age parameter
+  // Constructor accepting positional parameters
   Person(
-    this.name,                     // Required
-    this.cityOfOrigin,            // Required
-    this.height,                  // Required
-    [this.surname = 'boo',        // Optional with default value
-    this.age = 15]                // Optional with default value
+    this.name,                    // Required
+    this.cityOfOrigin,           // Required
+    this.height,                 // Required
+    [this.surname = 'boo',       // Optional with a default value
+    this.age = 15]               // Optional with a default value
   );
 }
