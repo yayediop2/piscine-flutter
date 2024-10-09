@@ -5,12 +5,12 @@ class Person {
   int age;                   // Age must be an int
   int height;                // Height must be an int
 
-  // Constructor accepting positional parameters
+  // Constructor accepting parameters in the correct order
   Person(
-    this.name,                    // Required
-    this.cityOfOrigin,           // Required
-    this.height,                 // Required
-    [this.surname = 'boo',       // Optional with a default value
-    this.age = 15]               // Optional with a default value
+    this.name,                // Required
+    this.surname,             // Required
+    this.cityOfOrigin,        // Required
+    this.height,              // Required
+    [this.age = 15]           // Optional with a default value
   );
 }
