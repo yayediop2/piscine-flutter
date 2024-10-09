@@ -5,11 +5,12 @@ class Person {
   int age;
   int height;
 
- Person({
-    this.name = "loolo",
-    this.cityOfOrigin = 'Paris',
-    this.height = 2,
-    this.surname = 'boo',
-    this.age = 15,
-  });
+  // Constructor with positional parameters, with optional age parameter
+  Person(
+    this.name,                     // Required
+    this.cityOfOrigin,            // Required
+    this.height,                  // Required
+    [this.surname = 'boo',        // Optional with default value
+    this.age = 15]                // Optional with default value
+  );
 }
