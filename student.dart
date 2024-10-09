@@ -1,9 +1,9 @@
-import 'university.dart';
+import 'person.dart';
 
-class Student extends University {
+class Student extends Person {
   int batch;
   int level;
   String _secretKey = '01';
- Student(this.batch, this.level, this._secretKey, String name, String city, int? ranking)
-      : super(name, city, ranking);
-      }
+  Student(String name, String cityOfOrigin, int age, int height, this.batch, this.level)
+      : super(name, cityOfOrigin, age, height);
+}
