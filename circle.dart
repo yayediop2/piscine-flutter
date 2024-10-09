@@ -1,8 +1,8 @@
-class Cirle {
+class Circle {
   double x;
   double y;
   double radius;
-  Cirle(this.x, this.y, this.radius);
+  Circle(this.x, this.y, this.radius);
 
   double get area => 3.14 * this.radius * this.radius;
 
