@@ -5,11 +5,11 @@ class Person {
   int age;
   int height;
 
-  Person({
-    required this.name,
-    required this.surname,
-    required this.cityOfOrigin,
-    required this.age,
-    required this.height,
+ Person({
+    this.name = "loolo",
+    this.cityOfOrigin = 'Paris',
+    this.height = 2,
+    this.surname = 'boo',
+    this.age = 15,
   });
 }
